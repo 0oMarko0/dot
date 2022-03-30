@@ -28,9 +28,7 @@ i3lock \
 --bshl-color=$WRONG          \
 \
 --screen 2                   \
---blur 8                     \
 --clock                      \
 --indicator                  \
 --time-str="%H:%M:%S"        \
---date-str="%A, %Y-%m-%d"    \
 --keylayout 1                \
