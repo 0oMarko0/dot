@@ -1,3 +1,6 @@
 [submodule ".vim/pack/themes/start/dracula"]
 	path = .vim/pack/themes/start/dracula
 	url = https://github.com/dracula/dracula-theme.git
+[submodule "nordic-wallpapers"]
+	path = nordic-wallpapers
+	url = https://github.com/linuxdotexe/nordic-wallpapers.git
