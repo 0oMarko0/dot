@@ -6,8 +6,10 @@ DEFAULT='#ff00ffcc'
 TEXT='#ee00eeee'
 WRONG='#880000bb'
 VERIFYING='#bb00bbbb'
+IMAGE="${HOME}/dot/wallpapers/kirby10-blur.png"
 
 i3lock \
+-F --image=$IMAGE		     \
 --insidever-color=$CLEAR     \
 --ringver-color=$VERIFYING   \
 \
