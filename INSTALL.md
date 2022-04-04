@@ -2,12 +2,16 @@
 ## Prerequisite
 - i3-gap
 - picom
-- 
+- rofi
 
 ## Git submodule
-The vim color shema and the wallpapers are git submodule.
+The vim color schema and the wallpapers are git submodule.
 ```
 git submodule update --init --recursive
+```
+
+## vim
+```
 ```
 
 ## Picom

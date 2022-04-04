@@ -127,15 +127,15 @@ set $ws7 7
 set $ws8 8
 set $ws9 9
 
-workspace $ws1 output HDMI-1
-workspace $ws2 output HDMI-1
-workspace $ws3 output HDMI-1
-workspace $ws4 output HDMI-1
-workspace $ws5 output HDMI-1
-workspace $ws6 output DP-2
-workspace $ws7 output DP-2
-workspace $ws8 output DP-2
-workspace $ws9 output DP-2
+workspace $ws1 output $SECONDARY
+workspace $ws2 output $SECONDARY
+workspace $ws3 output $SECONDARY
+workspace $ws4 output $SECONDARY
+workspace $ws5 output $SECONDARY
+workspace $ws6 output $PRIMARY
+workspace $ws7 output $PRIMARY
+workspace $ws8 output $PRIMARY
+workspace $ws9 output $PRIMARY
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -147,7 +147,6 @@ bindsym $mod+6 workspace number $ws6
 bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
-bindsym $mod+0 workspace number $ws10
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
