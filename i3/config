@@ -193,15 +193,11 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # Set shut down, restart and locking features
 bindsym $mod+0 mode "$mode_system"
-set $mode_system l) Lock, e) Exit, u) Switch user, s) Suspend, h) Hibernate, r) Reboot, Shift+s) Shutdown
+set $mode_system e) Exit, r) Reboot, Shift+s) Shutdown
 mode "$mode_system" {
-    bindsym l exec --no-startup-id i3exit lock, mode "default"
-    bindsym s exec --no-startup-id i3exit suspend, mode "default"
-    bindsym u exec --no-startup-id i3exit switch_user, mode "default"
-    bindsym e exec --no-startup-id i3exit logout, mode "default"
-    bindsym h exec --no-startup-id i3exit hibernate, mode "default"
-    bindsym r exec --no-startup-id i3exit reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
+    bindsym e exec --no-startup-id i3-msg exit
+    bindsym r exec --no-startup-id systemctl reboot
+    bindsym Shift+s exec --no-startup-id systemctl poweroff
 
     # exit system mode: "Enter" or "Escape"
     bindsym Return mode "default"
@@ -233,7 +229,7 @@ mode "resize" {
 }
 
 # Lock screen
-bindsym $mod+p exec --no-startup-id blurlock
+bindsym $mod+p exec --no-startup-id i3lock
 
 # Autostart applications
 exec --no-startup-id nitrogen --restore; sleep 1; picom --experimental-backends -b --config ~/dot/picom/picom.conf
