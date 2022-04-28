@@ -5,13 +5,13 @@
       "alignment": "left",
       "segments": [
         {
-          "foreground": "#E06C75",
+          "foreground": "#FF5555",
           "style": "plain",
           "template": "root <#ffffff>in</> ",
           "type": "root"
         },
         {
-          "foreground": "#55B9C4",
+          "foreground": "#8BE9FD",
           "properties": {
             "style": "folder"
           },
@@ -20,7 +20,7 @@
           "type": "path"
         },
         {
-          "foreground": "#C678DD",
+          "foreground": "#bd93f9",
           "properties": {
             "fetch_status": true
           },
@@ -29,7 +29,7 @@
           "type": "git"
         },
         {
-          "foreground": "#98C379",
+          "foreground": "#50fa7b",
           "properties": {
             "fetch_version": true
           },
@@ -51,7 +51,7 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#63F08C",
+          "foreground": "#50FA7B",
           "style": "plain",
           "template": "\u279c ",
           "type": "text"
