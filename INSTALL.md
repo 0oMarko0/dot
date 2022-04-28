@@ -25,7 +25,7 @@ The configuration is set in i3 and located at
 ## Font
 On ubuntu `cp` all font to
 ```
-sudo cp font/* /usr/share/fonts/truetype/ttf
+sudo cp font/IBM_nerd/* /usr/share/fonts/truetype/ttf
 ```
 Clear and regenerate your font cache
 ```
